@@ -15,7 +15,7 @@ app.post("/track", async (req,res) => {
         switch(action){
             case 'survey':
                 const {genre, age, education, income, country} = value;
-                const studyGroup = ['A','B','C'][Math.round(Math.random()*2)]
+                const studyGroup = ['A','B','C'][Math.floor(Math.random()*3)]
                 
                 // write to firestore
                 admin.firestore().collection("users").doc(userID).set({
