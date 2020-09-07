@@ -10,4 +10,3 @@ const bfc = require("./BFC");
 // // https://firebase.google.com/docs/functions/write-firebase-functions
 //
 exports.bfc = functions.https.onRequest(bfc);
-
